@@ -1,0 +1,44 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+
+block style
+   style 
+    include ../static/style.css
+    
+block content   
+    
+    section#introSection 
+        div Welcome to Irfan's Cricket academy
+        div.small Eat Sleep Cricket Repeat
+    section#missionSection 
+        h2 Our Mission
+        div.card 
+          h3 Play CoverDrives shots like Virat Kohli.
+            div.card-box
+             div.card-img
+               img(src="/static/img/2.jpg")
+               div.card-content
+                p This is the best Cricket academy
+        div.card 
+          h3 Swing like GLenn Mcgrath.
+          div.card-box
+            div.card-img
+              img(src="/static/img/3.jpg")
+            div.card-content
+              p This is the best Cricket academy
+        div.card 
+          h3 Pull shorts like Ricky Pointing.
+          div.card-box
+            div.card-img
+              img(src="/static/img/1.jpg")
+          div.card-content
+              p This is the best Cricket academy
+    section#sponsersSection 
+        h2 our Sponsers
+        div#sponsors
+          img(src="/static/img/logo1.jpg", alt="sponser Image",Class="spImage")
+          img(src="/static/img/logo2.png", alt="sponser Image",Class="spImage")
+          img(src="/static/img/logo3.png", alt="sponser Image",Class="spImage")
+          img(src="/static/img/logo4.png", alt="sponser Image",Class="spImage")
